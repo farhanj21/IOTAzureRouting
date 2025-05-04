@@ -7,7 +7,7 @@ from azure.iot.device import Message
 
 
 async def connect():
-    connection_str = "HostName=IOTAssignment2.azure-devices.net;DeviceId=VirtualDevice1;SharedAccessKey=+GuMKy8cWcPCTFFXNFKyKdpZO3yfxvBMFyEB9m+/m4I="
+    connection_str = "" #your connection string here
     device_client = IoTHubDeviceClient.create_from_connection_string(connection_str)
     await device_client.connect()
     print('Connected to IoT Hub')
